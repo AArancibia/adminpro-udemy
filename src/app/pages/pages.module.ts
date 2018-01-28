@@ -5,23 +5,33 @@ import {Graficas1Component} from "./graficas1/graficas1.component";
 import {PagesComponent} from "./pages.component";
 import {SharedModule} from "../shared/shared.module";
 import {PagesRoutes} from "./pages.routes";
+import {FormsModule} from "@angular/forms";
+import {IncrementadorComponent} from "../components/incrementador/incrementador.component";
+import {ChartsModule} from "ng2-charts";
+import {GraficoDonaComponent} from "../components/grafico/graficoDona.component";
 
 @NgModule({
   declarations: [
     PagesComponent,
     DashboardComponent,
     ProgressComponent,
-    Graficas1Component
+    Graficas1Component,
+    IncrementadorComponent,
+    GraficoDonaComponent
   ],
   exports: [
     PagesComponent,
     DashboardComponent,
     ProgressComponent,
-    Graficas1Component
+    Graficas1Component,
+    IncrementadorComponent,
+    GraficoDonaComponent
   ],
   imports: [
     SharedModule,
-    PagesRoutes
+    PagesRoutes,
+    FormsModule,
+    ChartsModule
   ]
 })
 
