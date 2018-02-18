@@ -11,7 +11,7 @@ import { PagesComponent } from './pages/pages.component';
 import { RegisterComponent } from './login/register/register.component';
 import {PagesModule} from "./pages/pages.module";
 import { IncrementadorComponent } from './components/incrementador/incrementador.component';
-import {FormsModule} from "@angular/forms";
+import {FormsModule, ReactiveFormsModule} from "@angular/forms";
 import {ServiceModule} from "./services/service.module";
 
 
@@ -26,7 +26,8 @@ import {ServiceModule} from "./services/service.module";
     APP_ROUTES,
     PagesModule,
     FormsModule,
-    ServiceModule
+    ServiceModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
