@@ -7,10 +7,8 @@ import { LoginComponent } from './login/login.component';
 
 //Rutas
 import { APP_ROUTES } from './app.routes';
-import { PagesComponent } from './pages/pages.component';
 import { RegisterComponent } from './login/register/register.component';
 import {PagesModule} from "./pages/pages.module";
-import { IncrementadorComponent } from './components/incrementador/incrementador.component';
 import {FormsModule, ReactiveFormsModule} from "@angular/forms";
 import {ServiceModule} from "./services/service.module";
 
