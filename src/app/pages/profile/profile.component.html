@@ -6,14 +6,14 @@
       <h6 class="card-subtitle">Nombre de Usuario</h6>
       <form ngNativeValidate #f="ngForm" class="form p-t-20" (ngSubmit)="guardar(f.value)">
         <div class="form-group">
-          <label for="exampleInputuname">User Name</label>
+          <label >User Name</label>
           <div class="input-group">
             <div class="input-group-addon"><i class="ti-user"></i></div>
             <input type="text" class="form-control" [ngModel]="usuario.nombre" name="nombre" placeholder="Nombre de Usuario" required>
           </div>
         </div>
         <div class="form-group">
-          <label for="exampleInputEmail1">Email address</label>
+          <label >Email address</label>
           <div class="input-group">
             <div class="input-group-addon"><i class="ti-email"></i></div>
             <input type="email" class="form-control" [ngModel]="usuario.email" [disabled]="usuario.google" name="email"  placeholder="Enter email">
