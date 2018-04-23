@@ -11,6 +11,7 @@ import { RegisterComponent } from './login/register/register.component';
 import {PagesModule} from "./pages/pages.module";
 import {FormsModule, ReactiveFormsModule} from "@angular/forms";
 import {ServiceModule} from "./services/service.module";
+import { SockComponent } from './components/sock/sock.component';
 
 
 @NgModule({

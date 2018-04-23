@@ -94,8 +94,8 @@ export class UsuariosComponent implements OnInit {
       confirmButtonColor: '#3085d6',
       cancelButtonColor: '#d33',
       confirmButtonText: 'Yes, delete it!'
-    }).then(( borrar ) => {
-      if (borrar) {
+    }).then((result) => {
+      if (result.value) {
         this._usuarioService.borrarUsuario(usuario._id)
           .subscribe(
             ( borrado ) => this.cambiarDesde(0),
@@ -117,6 +117,7 @@ export class UsuariosComponent implements OnInit {
   }
 
   mostrarModal( id: string ) {
+    debugger;
     this.modalUploadService.mostrarModal( 'usuarios', id);
   }
 

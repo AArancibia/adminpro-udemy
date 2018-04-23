@@ -17,6 +17,11 @@ import { ProfileComponent } from './profile/profile.component';
 import {CommonModule} from "@angular/common";
 import { UsuariosComponent } from './usuarios/usuarios.component';
 import { ModalUploadComponent } from '../components/modal-upload/modal-upload.component';
+import { HospitalesComponent } from './hospitales/hospitales.component';
+import {SockComponent} from "../components/sock/sock.component";
+import {HttpClientModule} from "@angular/common/http";
+import { MedicosComponent } from './medicos/medicos.component';
+import { MedicoComponent } from './medicos/medico.component';
 
 @NgModule({
   declarations: [
@@ -31,7 +36,11 @@ import { ModalUploadComponent } from '../components/modal-upload/modal-upload.co
     RxjsComponent,
     ProfileComponent,
     UsuariosComponent,
-    ModalUploadComponent
+    ModalUploadComponent,
+    HospitalesComponent,
+    SockComponent,
+    MedicosComponent,
+    MedicoComponent
   ],
   exports: [
     PagesComponent,
@@ -39,7 +48,8 @@ import { ModalUploadComponent } from '../components/modal-upload/modal-upload.co
     ProgressComponent,
     Graficas1Component,
     IncrementadorComponent,
-    GraficoDonaComponent
+    GraficoDonaComponent,
+    SockComponent
   ],
   imports: [
     SharedModule,
@@ -47,7 +57,8 @@ import { ModalUploadComponent } from '../components/modal-upload/modal-upload.co
     FormsModule,
     ChartsModule,
     PipesModule,
-    CommonModule
+    CommonModule,
+    HttpClientModule
   ]
 })
 
